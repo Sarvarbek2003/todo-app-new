@@ -100,8 +100,8 @@ app.post('/todos', (req, res) => {
     try {
         let todoss = fs.readFileSync( path.join(__dirname, 'database', 'todos.json'), 'UTF-8' )
         let todosJ = todoss ? JSON.parse(todoss) : []
-        if( !(typeof req.body.title === 'string') || req.body.title.length < 20 ) return res.json({message:'Invalid title'})
-        if( !(typeof req.body.text === 'string') || req.body.text.length < 100 ) return res.json({message: 'Invalid text'})
+        if( !(typeof req.body.title === 'string') || req.body.title.length > 20 ) return res.json({message:'Invalid title'})
+        if( !(typeof req.body.text === 'string') || req.body.text.length > 100 ) return res.json({message: 'Invalid text'})
         let todoUser = todosJ.find(todo => +todo.userId == +req.body.userId) 
         if(!todoUser) {
             newobj = {}
