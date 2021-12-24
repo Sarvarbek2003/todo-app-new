@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo append</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 600px;
+            height: 530px;
+            margin-top: 40px;
+            border: rgb(126, 124, 124) 3px solid;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(214, 210, 210);
+            box-shadow: 0px 0px 15px rgb(95 92 92 / 71%);
+        }
+        
+        .input_title {
+            width: 300px;
+            height: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .input_todo {
+            width: 500px;
+            height: 400px;
+            padding: 10px 10px;
+            overflow-y: auto;
+        }
+        
+        button {
+            display: inline;
+            margin-top: 20px;
+            margin-left: 420px;
+            width: 80px;
+            height: 25px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .homepage{
+            display: flex;
+        }
+        a{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            display: inline;
+            margin-bottom: auto;
+        }
+        button{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="input_title" placeholder="title" type="text">
+        <textarea name="" class="input_todo" placeholder="enter a maximum of 50 words" cols="30" rows="10"></textarea>
+        <div class="homepage">
+            <a href="/">Home</a>
+            <button>Append</button>
+        </div>
+
+    </div>
+    <script src="./js/util.js"></script>
+    <script src="./js/addTodo.js"></script>
+</body>
+</html>

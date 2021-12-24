@@ -1,0 +1,16 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Sh.Shahzodbek",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

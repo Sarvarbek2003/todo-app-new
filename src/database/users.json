@@ -1,0 +1,42 @@
+[
+    {
+        "userId": 1,
+        "username": "sarvarbek",
+        "parol": "Bilmadim2003@",
+        "gender": "male",
+        "birthday": "2003",
+        "online": true
+    },
+    {
+        "userId": 2,
+        "username": "Shahzotbek",
+        "parol": "Parol123@",
+        "gender": "male",
+        "birthday": "2003",
+        "online": true
+    },
+    {
+        "userId": 3,
+        "username": "Nodir",
+        "parol": "Parol321@",
+        "gender": "male",
+        "birthday": "2003",
+        "online": true
+    },
+    {
+        "userId": 4,
+        "username": "Aziz",
+        "parol": "Parol456@",
+        "gender": "male",
+        "birthday": "2003",
+        "online": true
+    },
+    {
+        "userId": 5,
+        "username": "Alisher",
+        "parol": "Password2001@#",
+        "gender": "male",
+        "birthday": "1992",
+        "online": true
+    }
+]
