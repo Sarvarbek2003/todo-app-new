@@ -7,7 +7,7 @@ let ID = +(window.localStorage.getItem('token'))
 let SESSION = JSON.parse(window.localStorage.getItem('session')).session 
 
 if(!ID){
-    window.location.assign('/login')
+    window.location.assign('/')
 }
 
 button.onclick = async () => {
@@ -17,7 +17,11 @@ button.onclick = async () => {
         title : input_title.value,
         text : input_todo.value
     }
-    input_title.value = null
-    input_todo.value = null
     let todos = await request('/todos', "POST", newTodo)
+    if (todos.message == "OK"){
+        input_title.value = null
+        input_todo.value = null
+    }else{
+        alert(todos.message)
+    }
 }
