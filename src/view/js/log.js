@@ -6,7 +6,7 @@ form.onsubmit = async (event) => {
     }
     let res = await request('/users')
     let data = res.find(user => {
-        if (user.username == login.value && user.parol == parol.value){
+        if (user.username.toLowerCase() == login.value.toLowerCase() && user.parol == parol.value){
             window.localStorage.setItem('token', user.userId)
             window.location.assign('/')
             login.value = null
