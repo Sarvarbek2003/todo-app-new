@@ -6,8 +6,8 @@ let button = document.querySelector('button')
 let ID = +(window.localStorage.getItem('token'))
 let SESSION = JSON.parse(window.localStorage.getItem('session')).session 
 
-if(ID){
-    window.location.assign('/')
+if(!ID){
+    window.location.assign('/login')
 }
 
 button.onclick = async () => {
